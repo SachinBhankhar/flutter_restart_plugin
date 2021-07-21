@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftFlutterRestartPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_restart", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "flutter_app_restart", binaryMessenger: registrar.messenger())
     let instance = SwiftFlutterRestartPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }

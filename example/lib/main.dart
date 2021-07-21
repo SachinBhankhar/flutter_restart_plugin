@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_restart/flutter_restart.dart';
+import 'package:flutter_app_restart/flutter_app_restart.dart';
+
 
 void main() {
   runApp(MyApp());

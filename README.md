@@ -1,4 +1,4 @@
-# flutter_restart
+# flutter_app_restart
 
 A new Flutter plugin.
 

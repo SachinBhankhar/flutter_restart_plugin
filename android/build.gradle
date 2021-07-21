@@ -1,4 +1,4 @@
-group 'com.example.flutter_restart'
+group 'com.example.flutter_app_restart'
 version '1.0-SNAPSHOT'
 
 buildscript {

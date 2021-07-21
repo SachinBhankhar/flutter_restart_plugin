@@ -1,4 +1,4 @@
-package com.example.flutter_restart
+package com.example.flutter_app_restart
 
 import android.app.Activity
 import android.app.AlarmManager
@@ -29,7 +29,7 @@ public class FlutterRestartPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "flutter_restart")
+    channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "flutter_app_restart")
     channel.setMethodCallHandler(this);
     context = flutterPluginBinding.applicationContext
   }
@@ -49,7 +49,7 @@ public class FlutterRestartPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
 
     @JvmStatic
     fun registerWith(registrar: Registrar) {
-      val channel = MethodChannel(registrar.messenger(), "flutter_restart")
+      val channel = MethodChannel(registrar.messenger(), "flutter_app_restart")
       channel.setMethodCallHandler(FlutterRestartPlugin())
       context = registrar.context()
       activity = registrar.activity()
