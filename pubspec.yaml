@@ -1,9 +1,8 @@
-name: flutter_restart
-description: A new Flutter plugin.
-version: 0.0.3
-authors:
-  - just.gam3
-homepage: https://github.com/justgam3/FlutterRestartPlugin
+name: flutter_app_restart
+description: A Flutter plugin to restart the app.
+version: 1.0.0
+
+homepage: https://github.com/SachinBhankhar/flutter_restart_plugin
 
 environment:
   sdk: '>=2.12.0 <3.0.0'

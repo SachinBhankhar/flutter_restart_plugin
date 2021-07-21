@@ -62,13 +62,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_restart:
+  flutter_app_restart:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.3"
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
