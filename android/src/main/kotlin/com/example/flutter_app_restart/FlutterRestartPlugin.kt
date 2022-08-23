@@ -52,7 +52,7 @@ public class FlutterRestartPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
       val channel = MethodChannel(registrar.messenger(), "flutter_app_restart")
       channel.setMethodCallHandler(FlutterRestartPlugin())
       context = registrar.context()
-      activity = registrar.activity()
+      activity = registrar.activity()!!
     }
   }
 
@@ -60,7 +60,7 @@ public class FlutterRestartPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
     if (call.method == "restartApp") {
       try{
         val intent = context.packageManager?.getLaunchIntentForPackage(
-                context.packageName)
+          context.packageName)
         intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
         activity.startActivity(intent)
