@@ -60,7 +60,7 @@ public class FlutterRestartPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
     if (call.method == "restartApp") {
       try{
         val intent = context.packageManager?.getLaunchIntentForPackage(
-                context.packageName)
+          context.packageName)
         intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
         activity.startActivity(intent)
