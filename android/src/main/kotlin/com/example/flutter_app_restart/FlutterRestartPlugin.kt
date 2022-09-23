@@ -52,7 +52,7 @@ public class FlutterRestartPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
       val channel = MethodChannel(registrar.messenger(), "flutter_app_restart")
       channel.setMethodCallHandler(FlutterRestartPlugin())
       context = registrar.context()
-      activity = registrar.activity()
+      activity = registrar.activity()!!
     }
   }
 
